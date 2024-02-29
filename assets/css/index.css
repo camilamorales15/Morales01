@@ -1,22 +1,16 @@
-/* Estilos para la cabecera y los botones */
+/* Estilos para la cabecera y los botones en esquema de blanco y negro */
 header {
-    /* Color pastel para la barra */
-    background-color: #ffd1dc;
+    background-color: #fff; /* Fondo blanco para la barra */
     padding: 20px;
-    /* Ajusta el header para que sea una barra horizontal */
     display: flex;
-    /* Separa los contenedores de enlaces y búsqueda */
     justify-content: space-between;
-    /* Alinea los elementos verticalmente en el centro */
     align-items: center;
 }
 
 .nav-links ul {
     list-style-type: none;
     padding: 0;
-    /* Alinea los elementos del menú de navegación horizontalmente */
     display: flex;
-    /* Distribuye los elementos del menú de navegación uniformemente */
     justify-content: space-around;
 }
 
@@ -26,32 +20,29 @@ header {
 
 .search-container {
     display: flex;
-    /* Alinea los elementos verticalmente en el centro */
     align-items: center;
-    /* Añade un espacio entre el input y los botones */
     gap: 10px;
 }
 
 .button-container {
     display: flex;
-    /* Añade un espacio entre los botones */
     gap: 10px;
+    justify-content: center;
 }
 
 .button {
-    /* Color pastel para los botones */
-    background-color: #ffb6c1;
+    background-color: #000; /* Fondo negro para los botones */
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    color: #fff; /* Texto blanco para los botones */
 }
 
 .button:hover {
-    /* Color pastel más oscuro al pasar el cursor */
-    background-color: #ff69b4;
+    background-color: #333; /* Fondo gris oscuro al pasar el cursor */
 }
 
-/* Estilos para el componente Jumbo */
+/* Estilos para el componente Jumbo en esquema de blanco y negro */
 .jumbo {
     background-image: url('../img/jumbo-background.jpg');
     background-size: cover;
@@ -61,50 +52,38 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
+    color: #fff; /* Texto blanco */
 }
 
 .jumbo-content {
     max-width: 800px;
     margin: 0 auto;
-    /* Añade un fondo semi-transparente para verificar la visibilidad */
-    background-color: #ffd1dcb6;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente negro para el contenido del Jumbo */
 }
 
-
 .jumbo-content h1 {
-    /* Ajusta el tamaño del título */
     font-size: 3em;
-    /* Añade un margen en la parte inferior del título */
     margin-bottom: 20px;
 }
 
 .jumbo-content p {
-    /* Ajusta el tamaño del párrafo */
     font-size: 1.2em;
-    /* Añade un margen en la parte inferior del párrafo */
     margin-bottom: 20px;
 }
 
 footer {
-    background-color: #ffd1dc; /* Color de fondo del pie de página */
-    padding: 20px; /* Espaciado interno */
-    text-align: center; /* Centra el contenido horizontalmente */
-    color: #333; /* Color del texto */
-    position: fixed; /* Fija el pie de página en la parte inferior de la página */
-    width: 100%; /* Asegura que el pie de página se extienda a lo ancho de la página */
-    bottom: 0; /* Posiciona el pie de página en la parte inferior de la página */
-}
-
-.button-container {
-    display: flex;
-    justify-content: center; /* Centra los botones horizontalmente */
-    align-items: center; /* Centra los botones verticalmente */
+    background-color: #fff; /* Fondo blanco para el pie de página */
+    padding: 20px;
+    text-align: center;
+    color: #000; /* Color del texto */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
 .custom-button {
-    background-color: #ff6347;
-    color: white;
+    background-color: #000;
+    color: #fff;
     border: none;
     padding: 10px 20px;
     text-align: center;
@@ -117,5 +96,5 @@ footer {
 }
 
 .custom-button:hover {
-    background-color: #ff4500;
+    background-color: #333;
 }
