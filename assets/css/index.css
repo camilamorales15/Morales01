@@ -1,22 +1,16 @@
-/* Estilos para la cabecera y los botones */
+/* Estilos para la cabecera y los botones en modo oscuro */
 header {
-    /* Color pastel para la barra */
-    background-color: #ffd1dc;
+    background-color: #333; /* Color oscuro para la barra */
     padding: 20px;
-    /* Ajusta el header para que sea una barra horizontal */
     display: flex;
-    /* Separa los contenedores de enlaces y búsqueda */
     justify-content: space-between;
-    /* Alinea los elementos verticalmente en el centro */
     align-items: center;
 }
 
 .nav-links ul {
     list-style-type: none;
     padding: 0;
-    /* Alinea los elementos del menú de navegación horizontalmente */
     display: flex;
-    /* Distribuye los elementos del menú de navegación uniformemente */
     justify-content: space-around;
 }
 
@@ -26,32 +20,29 @@ header {
 
 .search-container {
     display: flex;
-    /* Alinea los elementos verticalmente en el centro */
     align-items: center;
-    /* Añade un espacio entre el input y los botones */
     gap: 10px;
 }
 
 .button-container {
     display: flex;
-    /* Añade un espacio entre los botones */
     gap: 10px;
+    justify-content: center; /* Centra los botones horizontalmente */
+    align-items: center; /* Centra los botones verticalmente */
 }
 
 .button {
-    /* Color pastel para los botones */
-    background-color: #ffb6c1;
+    background-color: #555; /* Color oscuro para los botones */
     border: none;
     padding: 10px 20px;
     cursor: pointer;
 }
 
 .button:hover {
-    /* Color pastel más oscuro al pasar el cursor */
-    background-color: #ff69b4;
+    background-color: #777; /* Color oscuro más claro al pasar el cursor */
 }
 
-/* Estilos para el componente Jumbo */
+/* Estilos para el componente Jumbo en modo oscuro */
 .jumbo {
     background-image: url('../img/jumbo-background.jpg');
     background-size: cover;
@@ -61,49 +52,42 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
+    color: white; /* Asegúrate de que el texto sea legible contra la imagen de fondo */
 }
 
 .jumbo-content {
     max-width: 800px;
     margin: 0 auto;
-    /* Añade un fondo semi-transparente para verificar la visibilidad */
-    background-color: #ffd1dcb6;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente claro para el contenido del Jumbo */
 }
 
-
 .jumbo-content h1 {
-    /* Ajusta el tamaño del título */
     font-size: 3em;
-    /* Añade un margen en la parte inferior del título */
     margin-bottom: 20px;
 }
 
 .jumbo-content p {
-    /* Ajusta el tamaño del párrafo */
     font-size: 1.2em;
-    /* Añade un margen en la parte inferior del párrafo */
     margin-bottom: 20px;
+}
+body {
+    background-color: #302f2f;
+    color: white;
+
 }
 
 footer {
-    background-color: #ffd1dc; /* Color de fondo del pie de página */
-    padding: 20px; /* Espaciado interno */
-    text-align: center; /* Centra el contenido horizontalmente */
-    color: #333; /* Color del texto */
-    position: fixed; /* Fija el pie de página en la parte inferior de la página */
-    width: 100%; /* Asegura que el pie de página se extienda a lo ancho de la página */
-    bottom: 0; /* Posiciona el pie de página en la parte inferior de la página */
-}
-
-.button-container {
-    display: flex;
-    justify-content: center; /* Centra los botones horizontalmente */
-    align-items: center; /* Centra los botones verticalmente */
+    background-color: #333; /* Color oscuro para el pie de página */
+    padding: 20px;
+    text-align: center;
+    color: #ccc; /* Color claro para el texto */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
 .custom-button {
-    background-color: #ff6347;
+    background-color: #555;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -117,5 +101,5 @@ footer {
 }
 
 .custom-button:hover {
-    background-color: #ff4500;
+    background-color: #777;
 }
